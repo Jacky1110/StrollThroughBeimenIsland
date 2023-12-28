@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.jotangi.strollthroughbeimenisland.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_nav_home_to_stopCarFragment"
+            app:destination="@id/stopCarFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_navigationShopFragment"
+            app:destination="@id/navigationShopFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_storeIntroductionListFragment"
+            app:destination="@id/storeIntroductionListFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_northGateGoodFoodListFragment"
+            app:destination="@id/northGateGoodFoodListFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_beimenManagerFragment"
+            app:destination="@id/beimenManagerFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_login"
+            app:destination="@id/nav_login" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_member"
+            app:destination="@id/nav_member" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_question"
+            app:destination="@id/nav_question" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_terms"
+            app:destination="@id/nav_terms" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_coupon"
+            app:destination="@id/nav_coupon" />
+        <action
+            android:id="@+id/action_nav_home_to_storeIntroductionListViewFragment"
+            app:destination="@id/storeIntroductionListViewFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.jotangi.strollthroughbeimenisland.ui.account.AccountLoginFragment"
+        android:label="@string/menu_login"
+        tools:layout="@layout/fragment_account_login">
+        <action
+            android:id="@+id/action_nav_login_to_accountForgetPasswordFragment"
+            app:destination="@id/accountForgetPasswordFragment" />
+        <action
+            android:id="@+id/action_nav_login_to_accountRegisterFragment"
+            app:destination="@id/accountRegisterFragment" />
+        <action
+            android:id="@+id/action_to_main"
+            app:destination="@id/nav_home"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@+id/nav_login"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_nav_login_to_beimenManagerFragment"
+            app:destination="@id/beimenManagerFragment"
+            app:popUpTo="@id/nav_login"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_member"
+        android:name="com.jotangi.strollthroughbeimenisland.ui.member.MemberFragment"
+        android:label="@string/menu_member"
+        tools:layout="@layout/fragment_member" />
+
+    <fragment
+        android:id="@+id/nav_coupon"
+        android:name="com.jotangi.strollthroughbeimenisland.ui.memberCoupon.CouponListFragment"
+        android:label="@string/menu_coupon"
+        tools:layout="@layout/fragment_coupon_list" />
+
+    <fragment
+        android:id="@+id/nav_terms"
+        android:name="com.jotangi.strollthroughbeimenisland.ui.account.AccountTermsUseFragment"
+        android:label="@string/menu_terms"
+        tools:layout="@layout/fragment_account_terms_use" />
+
+    <fragment
+        android:id="@+id/nav_question"
+        android:name="com.jotangi.strollthroughbeimenisland.ui.account.AccountQAFragment"
+        android:label="@string/menu_question"
+        tools:layout="@layout/fragment_account_q_a" />
+    <fragment
+        android:id="@+id/stopCarFragment"
+        android:name="com.jotangi.strollthroughbeimenisland.ui.parking.StopCarFragment"
+        android:label="@string/menu_parking"
+        tools:layout="@layout/fragment_stop_car" />
+    <fragment
+        android:id="@+id/accountForgetPasswordFragment"
+        android:name="com.jotangi.strollthroughbeimenisland.ui.account.AccountForgetPasswordFragment"
+        android:label="@string/menu_forgetPassword"
+        tools:layout="@layout/fragment_account_forget_password">
+        <action
+            android:id="@+id/action_accountForgetPasswordFragment_to_nav_login"
+            app:destination="@id/nav_login" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountRegisterFragment"
+        android:name="com.jotangi.strollthroughbeimenisland.ui.account.AccountRegisterFragment"
+        android:label="@string/menu_register"
+        tools:layout="@layout/fragment_account_register">
+        <action
+            android:id="@+id/action_accountRegisterFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigationViewFragment"
+        android:name="com.jotangi.strollthroughbeimenisland.ui.navigationShop.NavigationViewFragment"
+        android:label="@string/menu_digital"
+        tools:layout="@layout/fragment_navigation_view" />
+    <fragment
+        android:id="@+id/navigationShopFragment"
+        android:name="com.jotangi.strollthroughbeimenisland.ui.navigationShop.NavigationShopFragment"
+        android:label="@string/menu_digital"
+        tools:layout="@layout/fragment_navigation_shop">
+        <action
+            android:id="@+id/action_navigationShopFragment_to_navigationViewFragment"
+            app:destination="@id/navigationViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/storeIntroductionListFragment"
+        android:name="com.jotangi.strollthroughbeimenisland.ui.storeIntroduction.StoreIntroductionListFragment"
+        android:label="@string/menu_introduction"
+        tools:layout="@layout/fragment_store_introduction_list">
+        <action
+            android:id="@+id/action_storeIntroductionListFragment_to_storeIntroductionListViewFragment"
+            app:destination="@id/storeIntroductionListViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/storeIntroductionListViewFragment"
+        android:name="com.jotangi.strollthroughbeimenisland.ui.storeIntroduction.StoreIntroductionListViewFragment"
+        android:label="@string/menu_introduction"
+        tools:layout="@layout/fragment_store_introduction_list_view" />
+
+    <fragment
+        android:id="@+id/northGateGoodFoodListFragment"
+        android:name="com.jotangi.strollthroughbeimenisland.ui.goodFood.NorthGateGoodFoodListFragment"
+        android:label="@string/menu_goodFood"
+        tools:layout="@layout/fragment_north_gate_good_food_list">
+        <action
+            android:id="@+id/action_northGateGoodFoodListFragment_to_northGateGoodFoodListViewFragment"
+            app:destination="@id/northGateGoodFoodListViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/northGateGoodFoodListViewFragment"
+        android:name="com.jotangi.strollthroughbeimenisland.ui.goodFood.NorthGateGoodFoodListViewFragment"
+        android:label="@string/menu_goodFood"
+        tools:layout="@layout/fragment_north_gate_good_food_list_view">
+        <action
+            android:id="@+id/action_northGateGoodFoodListViewFragment_to_storeIntroductionListViewFragment"
+            app:destination="@id/storeIntroductionListViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/beimenManagerFragment"
+        android:name="com.jotangi.strollthroughbeimenisland.ui.beimenManager.BeimenManagerFragment"
+        android:label="@string/menu_manager"
+        tools:layout="@layout/fragment_beimen_manager">
+        <action
+            android:id="@+id/action_beimenManagerFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+        <action
+            android:id="@+id/action_beimenManagerFragment_to_scanCouponFragment"
+            app:destination="@id/scanCouponFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/scanCouponFragment"
+        android:name="com.jotangi.strollthroughbeimenisland.ui.beimenManager.ScanCouponFragment"
+        android:label="@string/menu_manager"
+        tools:layout="@layout/fragment_scan_coupon">
+        <action
+            android:id="@+id/action_scanCouponFragment_to_beimenManagerFragment"
+            app:destination="@id/beimenManagerFragment"
+            app:popUpTo="@id/beimenManagerFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+</navigation>

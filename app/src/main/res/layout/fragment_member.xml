@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.member.MemberFragment">
+
+    <include
+        android:id="@+id/toolbar_include"
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_include">
+
+        <TextView
+            android:id="@+id/member_id_editText"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/round_gray_empty"
+            android:gravity="center_vertical"
+            android:hint="@string/id_input_hint_title"
+            android:paddingStart="20dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/c_aaaaaa_100"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/member_password_editText"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_gray_empty"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:hint="@string/password_input_hint_title"
+            android:inputType="textPassword"
+            android:paddingStart="20dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/c_aaaaaa_100"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/member_id_editText"
+            app:layout_constraintStart_toStartOf="@+id/member_id_editText"
+            app:layout_constraintTop_toBottomOf="@+id/member_id_editText" />
+
+
+        <EditText
+            android:id="@+id/member_new_password_editText"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_gray_empty"
+            android:hint="@string/check_new_password_input_hint_title"
+            android:inputType="textPassword"
+            android:paddingStart="20dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/c_aaaaaa_100"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/member_password_editText"
+            app:layout_constraintStart_toStartOf="@+id/member_password_editText"
+            app:layout_constraintTop_toBottomOf="@+id/member_password_editText" />
+
+        <EditText
+            android:id="@+id/member_name_editText"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_gray_empty"
+            android:hint="@string/register_name_input_hint_title"
+            android:inputType="textPersonName"
+            android:paddingStart="20dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/c_aaaaaa_100"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/member_new_password_editText"
+            app:layout_constraintStart_toStartOf="@+id/member_new_password_editText"
+            app:layout_constraintTop_toBottomOf="@+id/member_new_password_editText" />
+
+
+        <TextView
+            android:id="@+id/member_birthday_editText"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_gray_empty"
+            android:gravity="center_vertical"
+            android:hint="@string/birthday_input_hint_title"
+            android:paddingStart="20dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/c_aaaaaa_100"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/member_name_editText"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/member_name_editText"
+            app:layout_constraintTop_toBottomOf="@+id/member_name_editText" />
+
+        <TextView
+            android:id="@+id/member_gender_editText"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_gray_empty"
+            android:gravity="center_vertical"
+            android:hint="@string/register_gender_input_hint_title"
+            android:paddingStart="20dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/c_aaaaaa_100"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/member_birthday_editText"
+            app:layout_constraintStart_toStartOf="@+id/member_birthday_editText"
+            app:layout_constraintTop_toBottomOf="@+id/member_birthday_editText" />
+
+
+        <EditText
+            android:id="@+id/member_email_editText"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_gray_empty"
+            android:hint="@string/register_email_input_hint_title"
+            android:inputType="textPersonName"
+            android:paddingStart="20dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/c_aaaaaa_100"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/member_gender_editText"
+            app:layout_constraintStart_toStartOf="@+id/member_gender_editText"
+            app:layout_constraintTop_toBottomOf="@+id/member_gender_editText" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/revise_button"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_primary"
+            android:text="@string/revise_member"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/member_email_editText"
+            app:layout_constraintStart_toStartOf="@+id/member_email_editText"
+            app:layout_constraintTop_toBottomOf="@+id/member_email_editText" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

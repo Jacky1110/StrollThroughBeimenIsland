@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">漫步北門嶼</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="main_fragment_title">漫步北門嶼</string>
+
+    <string name="menu_home">首頁</string>
+    <string name="menu_login">會員登入</string>
+    <string name="menu_member">會員資料</string>
+    <string name="menu_coupon">優惠券</string>
+    <string name="menu_terms">使用者條款</string>
+    <string name="menu_question">常見問題</string>
+    <string name="menu_parking">停車資訊</string>
+    <string name="menu_digital">數位導覽</string>
+    <string name="menu_forgetPassword">忘記密碼</string>
+    <string name="menu_register">會員註冊</string>
+    <string name="menu_introduction">店家介紹</string>
+    <string name="menu_goodFood">北門好食</string>
+    <string name="menu_manager">北門嶼店長</string>
+    <string name="menu_signOut">登出</string>
+
+    <!--    登入&忘記密碼-->
+    <string name="id_input_hint_title">請輸入手機號碼</string>
+    <string name="forget_password_title"><u>忘記密碼</u></string>
+    <string name="password_input_hint_title">請輸入密碼(8-16碼英數混合)</string>
+    <string name="check_new_password_input_hint_title">請確認修改密碼</string>
+    <string name="check_password_input_hint_title">請確認密碼</string>
+    <string name="new_password_input_hint_title">請輸入重設密碼(8-16碼英數混合)</string>
+    <string name="again_new_password_input_hint_title">請確認重設密碼</string>
+    <string name="login_title">登入</string>
+    <string name="check_title">確定</string>
+
+    <!--    使用者條款-->
+    <string name="terms_use">非常歡迎您下載本App，為了讓您能夠安心使用本App的各項服務與資訊，特此向您說明本App的隱私權保護政策，以保障您的權益，請您詳閱下列內容：\n\n一、隱私權保護政策的適用範圍\n隱私權保護政策內容，包括本App如何處理在您使用App服務時收集到的個人識別資料。隱私權保護政策不適用於本App以外的相關連結外部網頁，也不適用於非本App所委託或參與管理的人員。\n\n二、個人資料的蒐集、處理及利用方式\n本App將向使用者蒐集以下個人資料。若您拒絕提供，將無法提供您使用本 APP 相關服務：\n\n當您登入使用本App時，根據本App提供服務性質不同，我們會請您提供個人資訊，包括：帳號、密碼、電話、營造業編號、建築師開業證書母號、電子簽名及其他相關必要資料。\n於一般連線時，伺服器會自行記錄相關行徑，包括您使用連線設備的IP位址、使用時間、使用的作業系統、瀏覽及點選資料記錄等，做為我們增進App服務的參考依據，此記錄為內部應用，決不對外公佈。\n三、資料之保護\n本App主機均設有防火牆、防毒系統等相關的各項資訊安全設備及必要的安全防護措施，加以保護網站及您的個人資料採用嚴格的保護措施，只由經過授權的人員才能接觸您的個人資料，相關處理人員皆簽有保密合約，如有違反保密義務者，將會受到相關的法律處分。\n如因業務需要有必要委託其他單位提供服務時，本App亦會嚴格要求其遵守保密義務，並且採取必要檢查程序以確定其將確實遵守。\n四、網站對外的相關連結\n本App的網頁提供其他網站的網路連結，您也可經由本App所提供的連結，點選進入其他網站。但該連結網站不適用本App的隱私權保護政策，您必須參考該連結網站中的隱私權保護政策。\n\n五、與第三人共用個人資料之政策\n本App絕不會提供、交換、出租或出售任何您的個人資料給其他個人、團體、私人企業或公務機關，但有法律依據或合約義務者，不在此限。 前項但書之情形包括不限於：\n\n經由您書面同意。\n法律明文規定。\n為免除您生命、身體、自由或財產上之危險。\n與公務機關或學術研究機構合作，基於公共利益為統計或學術研究而有必要，且資料經過提供者處理或蒐集著依其揭露方式無從識別特定之當事人。\n當您在App裡的行為，違反服務條款或可能損害或妨礙App與其他使用者權益或導致任何人遭受損害時，經App管理單位研析揭露您的個人資料是為了辨識、聯絡或採取法律行動所必要者。\n有利於您的權益。\n本App委託廠商協助蒐集、處理或利用您的個人資料時，將對委外廠商或個人善盡監督管理之責。\n六、隱私權保護政策之修正\n本App隱私權保護政策將因應需求隨時進行修正。\n</string>
+
+
+    <!--    註冊-->
+    <string name="password_again_hint_title">請確認密碼</string>
+    <string name="register_name_input_hint_title">請輸入您的姓名</string>
+    <string name="register_email_input_hint_title">請輸入您的電子郵件(非必填)</string>
+    <string name="register_gender_input_hint_title">請輸入您的性別</string>
+    <string name="register_birthday_input_hint_title">請選擇生日(註冊後不可修改)</string>
+    <string name="register_referral_input_hint_title">請輸入推薦碼(非必填)</string>
+    <string name="signup_agree_title">我同意以此資料註冊會員，並同意會員使用條款</string>
+    <string name="register_confirm_hint_title">確定註冊</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--    會員資料-->
+    <string name="birthday_input_hint_title">請選擇生日</string>
+    <string name="revise_member">修改資料</string>
+
+    <!--    優惠券-->
+    <string name="coupon_title">優惠券</string>
+    <string name="coupon_tab1_title">可使用</string>
+    <string name="coupon_tab2_title">已使用/過期</string>
+
+</resources>
